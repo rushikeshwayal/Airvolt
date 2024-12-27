@@ -9,7 +9,7 @@ import TechDropDown from "./TechDropDown";
 
 function NavBar() {
     return (
-        <div className="flex flex-wrap h-20 items-center z-20 text-white px-2 sm:px-20 ">
+        <div className="flex flex-wrap h-20 items-center z-20 text-white px-1 sm:px-20 ">
             {/* Logo Section */}
             <div className="mr-auto sm:w-auto w-full text-center text-green-400">
                 <a href="/" className="boldText font-bold text-sm sm:text-2xl whitespace-nowrap">

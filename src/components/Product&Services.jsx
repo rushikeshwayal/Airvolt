@@ -7,7 +7,7 @@ export default function ProjectAndServices() {
   return (
     <div id="Product" className="p-10 flex flex-col items-center">
       <div className="mb-10">
-        <h1 className="extraBoldText text-3xl text-center">Product & Services</h1>
+        <h1 className="extraBoldText text-3xl text-center text-green-500">Products</h1>
       </div>
       <div className="flex flex-wrap justify-center gap-10">
         {/* Card 1 */}

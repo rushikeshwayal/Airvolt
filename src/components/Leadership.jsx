@@ -37,16 +37,16 @@ export default function Leadership() {
       <h1 className=" extraBoldText  text-3xl md:text-4xl font-bold text-center text-green-500">Leadership</h1>
 
       {/* Leadership Team Section */}
-      <div className='flex justify-center items-center p-8 gap-40'>
+      <div className='flex flex-wrap justify-center items-center p-8 md:gap-40'>
         <div className='flex flex-col items-center'>
           <div
             id='leadershipText'
-            className={`absolute flex flex-col md:flex-col justify-center items-center space-y-8 md:space-y-0 md:space-x-10 max-w-7xl mx-auto px-4 transition-opacity ${showNext ? 'fade-out' : ''} `}
+            className={`absolute flex flex-col md:flex-col justify-center items-center space-y-2 md:space-y-0 md:space-x-10 md:max-w-7xl mx-auto px-4 transition-opacity ${showNext ? 'fade-out' : ''} `}
             style={{ visibility: showNext ? 'hidden' : 'visible' }}
           >
-            <div className="max-w-xl text-center md:text-left">
+            <div className="md:max-w-xl w-full text-center md:text-left">
               <h2 className="text-2xl text-gray-800">Our Leadership</h2>
-              <p className="text-lg mt-4 text-gray-600 leading-relaxed mx-auto md:mx-0">
+              <p className="text-lg mt-4 text-gray-600 md:leading-relaxed  md:mx-0">
               Driving Technology, Business Development & Operations 
 He has industry experience of 13 years and X-Founder of Vegeebook 
 Solutions (OPC) Pvt Ltd 
@@ -73,7 +73,7 @@ Author – Hosh Book
           >
             <div className="max-w-xl text-center md:text-left">
               <h2 className="text-2xl text-gray-800">Vision</h2>
-              <p className="text-lg mt-4 text-gray-600 leading-relaxed mx-auto md:mx-0">
+              <p className="text-lg mt-4 text-gray-600 md:leading-relaxed  md:mx-0">
                 The vision of our leadership team is to create an environment that fosters innovation, collaboration, and a commitment to excellence. We aim to lead the industry by adopting cutting-edge technologies and building long-lasting relationships with our customers.
               </p>
               <p className='aboutParagraph text-end mt-5 mr-10'>- Keshav Hissal</p>
@@ -91,7 +91,7 @@ Author – Hosh Book
         </div>
 
         {/* CEO Section */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center md:mt-0 mt-10">
           <img
             className="h-[500px] w-80 object-cover rounded-lg"
             src={CEO}

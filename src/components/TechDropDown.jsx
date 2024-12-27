@@ -10,7 +10,7 @@ function TechDropDown() {
   return (
     <div className="relative text-white">
       <button
-        className="rounded-lg gap-5 flex justify-between px-5 py-2 items-center transition duration-300 hover:bg-white hover:text-black"
+        className="rounded-lg gap-1 md:gap-5 flex justify-between px-5 py-2 items-center transition duration-300 hover:bg-white hover:text-black"
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
@@ -32,7 +32,7 @@ function TechDropDown() {
           </a>
         </li>
         <li className="hover:bg-gray-100 hover:text-black transition duration-300 rounded-lg">
-          <a className="block px-3 py-2 text-start" href="/#Product">
+          <a className="block px-3 py-2 text-start" href="/#features">
             Services
           </a>
         </li>

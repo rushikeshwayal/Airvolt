@@ -12,10 +12,10 @@ import star from "../assets/star.png";
         const [isOurStoryDrawerOpen, setIsOurStoryDrawerOpen] = useState(false);
         const toggleOurStoryDrawer = () => setIsOurStoryDrawerOpen(!isOurStoryDrawerOpen);
         return (
-            <div id='Board' className='bg-white p-10 flex justify-center items-center w-full border-gray-500 border-t-2 border-b-2'>
+            <div id='Board' className='bg-white p-10 md:flex md:justify-center md:items-center w-full border-gray-500 border-t-2 border-b-2'>
                 {/* Title Section */}
                 <div className='text-center mb-10 min-w-[60%]'>
-                    <img src={star} className='h-8 absolute ml-40 -rotate-12' alt='none'/>
+                    <img src={star} className='h-8 absolute md:ml-40 -rotate-12' alt='none'/>
                     <h1 className='AboutTitle text-4xl text-gray-800 mb-4'>Our Leading, Strong Board</h1>
                     <p className='aboutParagraph text-gray-500 text-lg'>These people work on making our product the best.</p>
                     <button onClick={toggleOurStoryDrawer} className='aboutParagraph text-white py-2 px-6 mt-5 bg-green-500 hover:bg-green-600 transition-colors duration-300 rounded-lg shadow-lg'>
@@ -67,16 +67,16 @@ out the wireless charging.
           </div>
 
                 {/* Team Grid Section */}
-                <div className='flex justify-center items-center flex-wrap z-20 '>
+                <div className='flex justify-center items-center flex-wrap z-20 md:w-full  '>
                     <div className='flex justify-center items-center space-x-5'>
-                        <img className='w-44 h-64 object-cover rounded-lg shadow-md' src={Board1} alt='Team Member 1' />
-                        <img className='w-44 h-64 object-cover rounded-lg shadow-md mb-28' src={Board2} alt='Team Member 2' />
-                        <img className='w-44 h-64 object-cover rounded-lg shadow-md' src={Board3} alt='Team Member 3' />
+                        <img className='md:w-44 md:h-64 w-24 h-44 object-cover rounded-lg shadow-md' src={Board1} alt='Team Member 1' />
+                        <img className='md:w-44 md:h-64 w-24 h-44 object-cover rounded-lg shadow-md mb-28' src={Board2} alt='Team Member 2' />
+                        <img className='md:w-44 md:h-64 w-24 h-44 object-cover rounded-lg shadow-md' src={Board3} alt='Team Member 3' />
                     </div>
-                    <div className='flex justify-center items-center '>
-                        <img className='w-44 h-64 object-cover rounded-lg shadow-md mr-48' src={Board4} alt='Team Member 4' />
-                        <img className='absolute w-44 h-64 object-cover rounded-lg shadow-md mb-28 ' src={Board5} alt='Team Member 5' />
-                        <img className='w-44 h-64 object-cover rounded-lg shadow-md ml-5 ' src={Board6} alt='Team Member 6' />
+                    <div className='flex justify-center items-center md:gap-0 gap-36 '>
+                        <img className='md:w-44 md:h-64  w-24 h-44 object-cover rounded-lg shadow-md md:mr-48' src={Board4} alt='Team Member 4' />
+                        <img className='absolute md:w-44 md:h-64 w-24 h-44 object-cover rounded-lg shadow-md md:mb-28  ' src={Board5} alt='Team Member 5' />
+                        <img className='md:w-44 md:h-64 object-cover w-24 h-44 rounded-lg shadow-md ml-5  ' src={Board6} alt='Team Member 6' />
                     </div>
                 </div>
             </div>

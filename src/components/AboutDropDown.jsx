@@ -18,7 +18,7 @@ function DropdownOut() {
         <div>
              <div className="relative text-white  ">
   <button 
-    className=" rounded-lg gap-5 flex justify-between px-5 py-2 items-center transition duration-300 hover:bg-white hover:text-black" 
+    className=" rounded-lg gap-1 md:gap-5 flex justify-between px-5 py-2 items-center transition duration-300 hover:bg-white hover:text-black" 
     onMouseOver={DropdownIn} 
     onMouseOut={DropdownOut}
   >
