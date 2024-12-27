@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap");
+
+.AboutTitle {
+  font-family: "Jost", sans-serif;
+  font-weight: 400; /* Set the specific weight you want */
+}
+.aboutParagraph {
+  font-family: "Jost", sans-serif;
+  font-weight: 300; /* Set the specific weight you want */
+}
+.litleboldText {
+  font-family: "Jost", sans-serif;
+  font-weight: 500; /* Set the specific weight you want */
+}
+.boldText {
+  font-family: "Jost", sans-serif;
+  font-weight: 600; /* Set the specific weight you want */
+}
+.extraBoldText {
+  font-family: "Jost", sans-serif;
+  font-weight: 700; /* Set the specific weight you want */
+}
