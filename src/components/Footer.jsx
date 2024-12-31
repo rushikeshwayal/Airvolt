@@ -4,7 +4,7 @@ function Footer() {
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-          <div className= "extraBoldText  text-teal-600 font-bold text-3xl">
+          <div className= "extraBoldText  text-black font-bold text-3xl">
               {/* <img
                 className="h-8"
                 src="https://websitedemos.net/plant-shop-04/wp-content/uploads/sites/160/2020/07/grow-plant-store-logo-green.svg"

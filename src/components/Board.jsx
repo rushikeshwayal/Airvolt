@@ -12,7 +12,7 @@ import star from "../assets/star.png";
         const [isOurStoryDrawerOpen, setIsOurStoryDrawerOpen] = useState(false);
         const toggleOurStoryDrawer = () => setIsOurStoryDrawerOpen(!isOurStoryDrawerOpen);
         return (
-            <div id='Board' className='bg-white p-10 md:flex md:justify-center md:items-center w-full border-gray-500 border-t-2 border-b-2'>
+            <div id='Board' className='bg-white p-10 md:flex md:justify-center md:items-center w-full border-gray-500 border-t-2 border-b-2 -z-10'>
                 {/* Title Section */}
                 <div className='text-center mb-10 min-w-[60%]'>
                     <img src={star} className='h-8 absolute md:ml-40 -rotate-12' alt='none'/>
@@ -67,7 +67,7 @@ out the wireless charging.
           </div>
 
                 {/* Team Grid Section */}
-                <div className='flex justify-center items-center flex-wrap z-20 md:w-full  '>
+                <div className='flex justify-center items-center flex-wrap  md:w-full  '>
                     <div className='flex justify-center items-center space-x-5'>
                         <img className='md:w-44 md:h-64 w-24 h-44 object-cover rounded-lg shadow-md' src={Board1} alt='Team Member 1' />
                         <img className='md:w-44 md:h-64 w-24 h-44 object-cover rounded-lg shadow-md mb-28' src={Board2} alt='Team Member 2' />

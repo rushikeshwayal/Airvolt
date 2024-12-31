@@ -1,10 +1,10 @@
 
-import Plant1Jpg from "../assets/DrivingStudent.jpg"
-import Plant2Jpg from "../assets/DrivingStudent2.jpg"
+import Plant1Jpg from "../assets/pexels-matt-ho-275137652-15921116.jpg"
+import Plant2Jpg from "../assets/pexels-mateusz-haberny-806274365-19238583.jpg"
 
 function PlantCare() {
     return(
-       <div  className=" flex flex-wrap justify-center relative mt-20 sm:flex-row flex-col ">
+       <div  className=" flex flex-wrap justify-center relative mt-20 sm:flex-row flex-col -z-10 ">
   {/* First image with dark overlay */}
   <div className="relative sm:w-[50%] h-[400px]">
     <div className="absolute inset-0 bg-black/40 z-10"></div>

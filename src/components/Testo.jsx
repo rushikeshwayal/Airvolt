@@ -22,10 +22,10 @@ function Testo() {
                 </svg>
               ))}
             </div>
-            <p className="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
+            <p className="mt-0.5 text-lg font-medium text-gray-900 AboutTitle">Paul Starr</p>
           </div>
         </div>
-        <p className="mt-4 text-gray-700">
+        <p className="mt-4 text-gray-700 aboutParagraph">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
           consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
           error officiis atque voluptates magnam!
