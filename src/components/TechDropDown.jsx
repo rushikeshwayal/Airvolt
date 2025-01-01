@@ -22,7 +22,7 @@ function TechDropDown() {
       <ul
         className={`${
           isDropdownOpen ? 'block' : 'hidden'
-        } absolute left-0 w-52 text-white shadow-lg pt-2 z-10`}
+        } absolute left-0 sm:w-52 w-44  text-white shadow-lg pt-2 z-10`}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
