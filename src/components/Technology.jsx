@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SoundWaves from "../assets/sound-waves.png";
 import RadioFrequency from "../assets/frequency.png";
 
@@ -10,6 +10,20 @@ export default function Technology() {
   // Toggle Drawer Functions
   const toggleLeftDrawer = () => setIsLeftDrawerOpen(!isLeftDrawerOpen);
   const toggleRightDrawer = () => setIsRightDrawerOpen(!isRightDrawerOpen);
+
+  // Lock/Unlock Body Scroll when drawers are open/closed
+  useEffect(() => {
+    if (isLeftDrawerOpen || isRightDrawerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Clean up overflow style on component unmount
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isLeftDrawerOpen, isRightDrawerOpen]);
 
   return (
     <div className="min-h-screen p-10 bg-gray-100 flex justify-center items-center">
@@ -33,7 +47,7 @@ export default function Technology() {
             </div>
             <button
               onClick={toggleLeftDrawer}
-              className=" litleboldText text-lg font-semibold text-white mb-3"
+              className="litleboldText text-lg font-semibold text-white mb-3"
             >
               Radio Frequency
             </button>
@@ -44,7 +58,7 @@ export default function Technology() {
             </p>
             <button
               onClick={toggleLeftDrawer}
-              className=" litleboldText text-sm font-semibold text-white mt-3"
+              className="litleboldText text-sm font-semibold text-white mt-3"
             >
               Learn More
             </button>
@@ -83,7 +97,7 @@ export default function Technology() {
           isLeftDrawerOpen ? "transform translate-x-0" : "transform -translate-x-full"
         }`}
       >
-        <div className="absolute p-6 flex flex-col justify-center items-center h-full space-y-4 z-50">
+        <div className="absolute p-6  md:pt-0 pt-36  flex flex-col justify-center items-center h-full space-y-4 z-50 overflow-y-auto md:overflow-y-none">
           <h2 className="litleboldText font-bold text-xl text-gray-800">Radio Frequency</h2>
           <p className="text-gray-600 aboutParagraph">
             Wireless charging technology can use different radio frequencies (RF) depending
@@ -111,17 +125,14 @@ export default function Technology() {
 
       {/* Right Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 md:w-6/12 bg-white  transition-transform duration-500 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-3/4 md:w-6/12 bg-white transition-transform duration-500 ease-in-out ${
           isRightDrawerOpen ? "transform translate-x-0" : "transform translate-x-full"
         }`}
       >
-        <div className="absolute p-6 flex flex-col justify-center items-center h-full space-y-4 z-50">
+        <div className="absolute md:pt-0 pt-80 p-6 flex flex-col justify-center items-center h-full space-y-4 z-50 md:overflow-y-none overflow-y-auto md:overflow-y-none">
           <h2 className="litleboldText font-bold text-xl text-gray-800">Sound Energy</h2>
           <p className="text-gray-600 aboutParagraph">
-            Sound energy is a form of kinetic energy that is produced by the
-            vibration of objects. These vibrations cause air particles or molecules
-            to collide with neighbouring particles, creating sound waves that travel
-            through mediums like air, water, wood, glass, or metal.
+            Sound energy is a form of kinetic energy that is produced by the vibration of objects. These vibrations cause air particles or molecules to collide with neighbouring particles, creating sound waves that travel through mediums like air, water, wood, glass, or metal.
           </p>
           <ul className="text-gray-600 aboutParagraph list-disc pl-5">
             <li>
