@@ -63,7 +63,7 @@ export default function AboutUs() {
               isOurStoryDrawerOpen ? "transform translate-y-0" : "transform translate-y-full"
             }`}
           >
-            <div className=" md:border-t-0 border-t-2 max-h-96 pt-[460px] md:pt-6 p-6 flex justify-center flex-col items-center space-y-4 md:overflow-y-none overflow-y-auto">
+            <div className=" md:border-t-0 border-t-2 max-h-96 pt-[450px] md:pt-6 p-6 flex justify-center flex-col items-center space-y-4 md:overflow-y-none overflow-y-auto">
               <h2 className="font-bold text-xl text-gray-800 AboutTitle">Our Story</h2>
               <p className="text-gray-600 aboutParagraph">
               Vegeebook Solutions 
